@@ -1,1 +1,1 @@
-# closest-pair-problem
+# Closest Pair Problem
