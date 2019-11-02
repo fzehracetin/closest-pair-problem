@@ -14,7 +14,7 @@ typedef struct {
 }pair;
 
 float findDistance(point* noktalar, int i, int j) {
-	return sqrt( pow(noktalar[i].x- noktalar[j].x, 2.0) + pow(noktalar[i].y- noktalar[j].y, 2.0));
+	return sqrt( pow(noktalar[i].x- noktalar[j].x, 2) + pow(noktalar[i].y- noktalar[j].y, 2));
 }
 
 pair findMinimum(point* noktalar, int p, int q) {
@@ -216,11 +216,11 @@ void tokenizer(char line[], point* noktalar, int i) {
 
 
 int main(int argc, char **argv) {
-	int n = 50, i = 0;
+	int n = 20, i = 0;
 	FILE *f1;
 	char line[100];
 	point* noktalar = (point*) malloc(n* sizeof(point));
-	f1 = fopen("D:\\a.txt", "r");
+	f1 = fopen("D:\\Input4.txt", "r");
 	
 	if (f1 == NULL){
 		printf("File could not opened!!\n");
